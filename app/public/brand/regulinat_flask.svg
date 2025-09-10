@@ -1,0 +1,25 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="g" cx="35%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#3EC1FF"/>
+      <stop offset="100%" stop-color="#0A74B9"/>
+    </radialGradient>
+    <style>
+      .stroke{stroke:#000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;fill:none}
+    </style>
+  </defs>
+
+  <!-- круглый фон -->
+  <circle cx="256" cy="256" r="238" fill="url(#g)"/>
+
+  <!-- пробка/горлышко -->
+  <path class="stroke" d="M256 128v72"/>
+  <path class="stroke" d="M212 128h88"/>
+
+  <!-- колба -->
+  <path class="stroke" d="M164 188c22 50 34 72 34 72m150-72c-22 50-34 72-34 72"/>
+  <path class="stroke" d="M198 260c-28 48-42 78-42 110 0 56 74 84 100 84h100c26 0 100-28 100-84 0-32-14-62-42-110"/>
+  <!-- чаша внутри (уровень жидкости/полка) -->
+  <path class="stroke" d="M170 336c40-22 86-32 142-32s102 10 142 32"/>
+
+</svg>
