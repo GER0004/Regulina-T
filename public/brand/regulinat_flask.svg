@@ -1,0 +1,50 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Фон-круг с радиальным градиентом как на образце -->
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="30%" r="80%">
+      <stop offset="0%"  stop-color="#34B4F0"/>
+      <stop offset="100%" stop-color="#0A75C0"/>
+    </radialGradient>
+    <style>
+      .stroke { fill: none; stroke: #FFF; stroke-linecap: round; stroke-linejoin: round }
+    </style>
+  </defs>
+
+  <!-- Круг -->
+  <circle cx="512" cy="512" r="464" fill="url(#bg)"/>
+
+  <!-- Стоппер (π) — белые скруглённые элементы как в примере -->
+  <!-- Верхняя перекладина -->
+  <rect x="360" y="190" rx="40" ry="40" width="304" height="72" fill="#FFF"/>
+  <!-- Две ножки -->
+  <rect x="434" y="254" rx="30" ry="30" width="48"  height="146" fill="#FFF"/>
+  <rect x="542" y="254" rx="30" ry="30" width="48"  height="146" fill="#FFF"/>
+
+  <!-- Колба (контур) -->
+  <path class="stroke" stroke-width="64"
+        d="M302 374
+           C 340 456, 382 534, 420 602
+           M722 374
+           C 684 456, 642 534, 604 602" />
+
+  <!-- Внешний контур колбы (основание) -->
+  <path class="stroke" stroke-width="64"
+        d="M392 572
+           C 334 666, 308 728, 308 784
+           c 0 116 128 200 256 200
+           s 256 -84 256 -200
+           c 0 -56 -26 -118 -84 -212" />
+
+  <!-- Внутренняя «полка»/уровень -->
+  <path class="stroke" stroke-width="56"
+        d="M332 736
+           C 424 688, 520 668, 640 668
+           s 216 20, 308 68" opacity="0"/> <!-- скрытый помощник для сглаживания -->
+
+  <!-- Видимая дуга уровня жидкости -->
+  <path class="stroke" stroke-width="56"
+        d="M372 736
+           C 468 692, 560 676, 652 676
+           s 184 16, 280 60" />
+
+</svg>
