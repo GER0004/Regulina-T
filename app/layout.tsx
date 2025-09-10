@@ -1,18 +1,12 @@
-import "./globals.css";
-
 export const metadata = {
-  title: "Regulina-T – Thymus Immunoregulator Platform",
-  description: "A unique breakthrough uniting science and faith.",
+  title: "Regulina-T™ — Thymus Immunoregulator Platform",
+  description: "A unique breakthrough uniting science and faith."
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-white text-black">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
